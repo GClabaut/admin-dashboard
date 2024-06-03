@@ -1,0 +1,115 @@
+@font-face {
+  font-family: Alexandria;
+  src: url(./asset/Alexandria-Regular.woff2);
+}
+
+* {
+  font-family: Alexandria, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: grid;
+  grid-template: 1fr 6fr / 1fr 4fr;
+}
+
+.sidebar {
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  background-color: #0284c7;
+  color: #f8fafc;
+  z-index: 2;
+}
+
+.sidebar > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: grid;
+  box-shadow: 0 0 8px #3f3f46;
+  z-index: 1;
+  align-items: center;
+}
+
+.head-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+#search {
+  background-color: #e7e5e4;
+  width: 75%;
+  height: 32px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+.head-bot {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+}
+
+.content {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #e7e5e4;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.side {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ann-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.trending > div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card,
+.ann-card,
+.trend-card {
+  background-color: #f8fafc;
+}
