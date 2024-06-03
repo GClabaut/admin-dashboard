@@ -97,10 +97,15 @@ ul {
   flex-direction: column;
 }
 
-.trending > div {
+.trend-card {
   display: flex;
-  gap: 8px;
+  flex-direction: column;
+}
+
+.trend-card-elem {
+  display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .user-info {
@@ -112,4 +117,6 @@ ul {
 .ann-card,
 .trend-card {
   background-color: #f8fafc;
+  z-index: 1;
+  box-shadow: 0 0 8px #3f3f46;
 }
