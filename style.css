@@ -15,6 +15,11 @@ h2 {
   margin: 0;
 }
 
+img {
+  max-height: 50px;
+  border-radius: 50%;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 6fr;
@@ -63,6 +68,7 @@ h2 {
 
 .header {
   display: grid;
+  grid-template-rows: 4fr 10fr;
   box-shadow: 0 0 8px #3f3f46;
   z-index: 1;
   align-items: center;
@@ -72,7 +78,7 @@ h2 {
   display: grid;
   grid-template-columns: 6fr 1fr 2fr;
   align-items: center;
-  padding: 24px 72px;
+  padding: 24px 72px 8px 72px;
 }
 
 .search-box {
@@ -112,12 +118,17 @@ h2 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-  padding: 24px 72px;
+  padding: 8px 72px 24px 72px;
 }
 
 .user {
   display: grid;
   grid-template-columns: 1fr 9fr;
+  align-items: center;
+}
+
+.user > img {
+  max-height: 75px;
 }
 
 .hello,
