@@ -18,7 +18,7 @@ h2 {
 .container {
   display: grid;
   grid-template-columns: 1fr 6fr;
-  grid-template-rows: 210px 1fr;
+  grid-template-rows: 190px 1fr;
 }
 
 .sidebar {
@@ -120,6 +120,11 @@ h2 {
   grid-template-columns: 1fr 9fr;
 }
 
+.hello,
+.user-name {
+  margin: 5px;
+}
+
 .action {
   display: flex;
   justify-content: space-between;
@@ -156,14 +161,14 @@ h2 {
 .card-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 35%);
+  grid-template-rows: repeat(3, 1fr);
   gap: 24px;
 }
 
 .card {
   position: relative;
   display: grid;
-  grid-template-rows: 60px 1fr 50px;
+  grid-template-rows: 60px minmax(0, 150px) 50px;
   border-radius: 8px;
   padding: 16px;
 }
@@ -182,8 +187,11 @@ h2 {
 }
 
 .text {
+  overflow: hidden;
+  max-height: 11.5ch;
   justify-self: start;
   align-self: start;
+  color: #3f3f46;
 }
 
 .svg {
@@ -201,11 +209,17 @@ h2 {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 16px;
+  padding-top: 48px;
 }
 
-.ann-card {
+.annoncements {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+}
+
+.ann-card-list {
+  display: grid;
 }
 
 .trend-card {
@@ -213,7 +227,7 @@ h2 {
   flex-direction: column;
 }
 
-.trend-card-elem {
+.trend-card {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -225,8 +239,8 @@ h2 {
 }
 
 .card,
-.ann-card,
-.trend-card {
+.ann-card-list,
+.trend-card-list {
   background-color: #f8fafc;
   z-index: 1;
   box-shadow: 0 0 8px #3f3f46;
