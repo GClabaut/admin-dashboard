@@ -146,7 +146,7 @@ h2 {
   padding-left: 24px;
   grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 7fr 3fr;
   gap: 24px;
   background-color: #e7e5e4;
 }
@@ -170,7 +170,7 @@ h2 {
   display: grid;
   grid-template-rows: 60px minmax(0, 150px) 50px;
   border-radius: 8px;
-  padding: 16px;
+  padding: 32px;
 }
 
 .card:before {
@@ -181,7 +181,7 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  max-width: 6px;
+  max-width: 12px;
   min-height: 100%;
   border-radius: 8px 0px 0px 8px;
 }
@@ -210,6 +210,7 @@ h2 {
   grid-template-rows: 1fr 1fr;
   gap: 16px;
   padding-top: 48px;
+  padding-right: 24px;
 }
 
 .annoncements {
@@ -220,11 +221,42 @@ h2 {
 
 .ann-card-list {
   display: grid;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 32px;
 }
 
-.trend-card {
+.ann-card {
+  padding-top: 12px;
+}
+
+.ann-card:not(:first-child) {
+  border-top: 2px solid #e7e5e4;
+}
+
+.ann-card > h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.ann-text {
+  color: #3f3f46;
+  max-height: 6.5ch;
+  overflow: hidden;
+}
+
+.trending {
   display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+
+.trend-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 32px;
 }
 
 .trend-card {
